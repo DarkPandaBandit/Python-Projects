@@ -1,0 +1,27 @@
+import datetime
+now = datetime.datetime.now()
+print('Current date and time using str method of datetime object: ')
+print(now)
+
+# This will print date time year on a single line using strftime.
+from datetime import datetime
+now = datetime.now()
+year = now.strftime('%y')
+print("Current year:", year)
+month = now.strftime('%m')
+print("Current month:", month)
+day = now.strftime('%d')
+print("Current day:", day)
+hour = now.strftime('%H')
+print("Current Hour:", hour)
+minute = now.strftime('%M')
+print('Current Minute:', minute)
+seconds = now.strftime('%S')
+print('Current Seconds:', seconds)
+mseconds = now.strftime('%f')
+print('Current Microsecond:', mseconds)
+date_time = now.strftime('%d/%m/%y, %H:%M:%S.%f')
+print('Current Date and time using strftime:')
+print(date_time)
+print('Current date and time using str method of datetime object: ')
+print(now)
